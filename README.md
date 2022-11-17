@@ -1,6 +1,7 @@
 # SAV-ed
 
 [Sav-ed](https://sav-ed.me).
+
 Ce projet est parti d'un besoin que j'ai constaté quand j'étais opticien ou j'ai passé énormément de temps à recevoir et à renvoyer des pièces de lunettes.  
 Lorsqu’un SAV est nécessaire sur un produit qui a été envoyé par transporteur, il est coûteux de le faire revenir chez son vendeur. Tant au niveau des frais d’envoi et de traitement qu'au niveau de l'écologie car souvent ces produits sont jetés une fois reçu et un simple contrôle visuel est effectué.  
 Le problème est aussi présent pour les particuliers qui commandent sur internet. Contacter le service client est souvent fastidieux et source de frustration pour les clients.  

@@ -81,7 +81,7 @@ const { pathname } = useLocation();
             onClick={() => dispatch(ticketListFilterBy('En cours'))}
             >
               <ListItemIcon>
-                 <InboxIcon /> 
+                <InboxIcon /> 
               </ListItemIcon>
               <ListItemText primary= 'En cours' />
             </ListItemButton >

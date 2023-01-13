@@ -43,20 +43,20 @@ function FormSAV(props) {
    const dispatch = useDispatch();
 
   // Controlled componenet only necessary her its why its not in the state or app
-   let { slug } = useParams();
+  let { slug } = useParams();
 
    // error state
-   const [valueName, setName] = useState("");
-   const [valueOrder, setOrder] = useState("");
-   const [valueEmail, setEmail] = useState("");
-   const [valuePhoneNumber, setPhoneNumber] = useState("");
-   const [valueMessageOfUser, setMessageOfUser] = useState("");
-   const [valueImage, setImage] = useState();
-   const [valueCGU, setCGU] = useState(false);
+  const [valueName, setName] = useState("");
+  const [valueOrder, setOrder] = useState("");
+  const [valueEmail, setEmail] = useState("");
+  const [valuePhoneNumber, setPhoneNumber] = useState("");
+  const [valueMessageOfUser, setMessageOfUser] = useState("");
+  const [valueImage, setImage] = useState();
+  const [valueCGU, setCGU] = useState(false);
  //error state
-   const [emailError, setEmailError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
  //call urlbase
- const apiUrl = useSelector((state) => state.url.apiUrl);
+const apiUrl = useSelector((state) => state.url.apiUrl);
 
 
   const handleSubmit = (event) => {
@@ -80,7 +80,6 @@ function FormSAV(props) {
       headers: {'Content-Type': 'multipart/form-data;'},
       data: form
     };
- 
     axios.request(options).then(function (response) {
       dispatch(successMessage("Votre demande a bien été prise en compte"))
       setRedirect(true)
@@ -88,7 +87,7 @@ function FormSAV(props) {
       dispatch(errorMessage("Une erreur est survenue merci de réessayer plus tard. Si le problème persiste merci d'utiliser le formulaire de contact"));
     });
   }
- };
+};
 
 
   return (

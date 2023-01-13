@@ -119,11 +119,9 @@ function SAVList() {
     <Box sx={{ display: 'flex', width: "100%" }}>
       <LateralBar />
       <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}>
-
         <Breadcrumbs aria-label="breadcrumb" sx={{marginBottom: "1rem"}}>
           <Link underline="hover" color="inherit" href="/list-sav">Mes tickets /</Link>
         </Breadcrumbs>
-
         <TextField
           value={searched}
           onChange={(e) => requestSearch(e.target.value)}
@@ -138,7 +136,6 @@ function SAVList() {
         />
         <TableContainer sx={{ borderRadius: "25px", marginTop: "1rem" }}>
           <Table  aria-label="simple table">
-
             <TableHead sx={{ backgroundColor: "#2d436d" }}>
               <TableRow>
                 <TableCell align="center" sx={{ color: "#fff", fontWeight:'bold' }}>Description</TableCell>
@@ -146,7 +143,6 @@ function SAVList() {
                 <TableCell align="left" sx={{ color: "#fff", fontWeight:'bold' }}>Nom de client</TableCell>
                 <TableCell align="left" sx={{ color: "#fff", fontWeight:'bold' }}>Date</TableCell>
                 <TableCell align="center" sx={{ color: "#fff", fontWeight:'bold' }}>Statut&nbsp;:&nbsp;
-
                   <NativeSelect
                     variant="outlined"
                     onChange={(e) => dispatch(ticketListFilterBy(e.target.value))}
@@ -161,13 +157,10 @@ function SAVList() {
                       filterValue.map((adress, key) => <option key={key} value={adress}>{adress}</option>)
                     }
                   </NativeSelect>
-
                 </TableCell>
                 <TableCell align="center" sx={{ color: "#fff", fontWeight:'bold' }}>Options</TableCell>
               </TableRow>
             </TableHead>
-
-       
             <TableBody>
               {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row, index) => (

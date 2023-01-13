@@ -21,18 +21,17 @@ function UserMessage() {
       open={messageValue}
       autoHideDuration={6000}
       onClose={() => dispatch(clearMessages())}
-    >
-     <MuiAlert
-       elevation={6}
-       variant="filled"
-       severity={severityOfMessage}
-       sx={{ width: "100%", color: 'white'}}
-       >
-       {messageContent}
-     </MuiAlert>
-   </Snackbar> 
+      >
+    <MuiAlert
+      elevation={6}
+      variant="filled"
+      severity={severityOfMessage}
+      sx={{ width: "100%", color: 'white'}}
+      >
+      {messageContent}
+    </MuiAlert>
+    </Snackbar> 
   )
 }
-
 
 export default UserMessage
